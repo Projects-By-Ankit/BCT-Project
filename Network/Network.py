@@ -13,3 +13,7 @@ class Network:
 
     def operate(self):
         pass
+
+    def check(self):
+        while self.Queue:
+            self.process(self.Queue.pop(0))
